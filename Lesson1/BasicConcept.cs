@@ -9,7 +9,8 @@ System.Console.WriteLine("/__|");
  Muti line Comments
  */
 
-// Basic Data Types and Variables
+// Basic Data Types and Variables declaration
+// [type] [variable name] = [value];
 string name = "King";
 char sex = 'M';
 int age = 31;
@@ -67,3 +68,31 @@ System.Console.WriteLine(words.IndexOf("follow")); //f is in 13 position, so ret
 //String Method: Substring
 System.Console.WriteLine(words.Substring(4)); //ider the following example: cut from 4th position
 System.Console.WriteLine(words.Substring(4, 6)); //ider t: cut from 4th position and count 6 char
+
+
+//Int divided by Int is Int
+System.Console.WriteLine(5 / 2);//2
+
+//Int divided by Double is Double
+System.Console.WriteLine(5 / 2.2);//2.27272727272...
+
+//Math
+System.Console.WriteLine(System.Math.Abs(-10));//10
+System.Console.WriteLine(System.Math.Floor(12.2));//12
+System.Console.WriteLine(System.Math.Ceiling(12.2));//13
+System.Console.WriteLine(System.Math.Pow(2,3));//8
+System.Console.WriteLine(System.Math.Sqrt(16));//4
+System.Console.WriteLine(System.Math.Max(2,99));//99
+System.Console.WriteLine(System.Math.Min(2, 99));//2
+
+//User Input
+System.Console.WriteLine("Press any button to continue...");
+string res = System.Console.ReadLine();
+System.Console.WriteLine($"You have enter {res}");
+
+// possible null value with "?" nullable
+System.Console.WriteLine("Press any button to continue... no code warnings");
+string? res_2 = System.Console.ReadLine();
+System.Console.WriteLine($"You have enter {res_2}");
+
+
